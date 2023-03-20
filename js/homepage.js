@@ -1,14 +1,14 @@
 //voeg hier die coole code toe die alles gaat doen :)
-let bobylan = true
+let hamburger = true
 
 function change() {
 
 
-    if (bobylan === false){
+    if (hamburger === false){
         document.getElementById("placeholder").src = "media/placeholder2.png";
-        bobylan = true;
+        hamburger = true;
     }else{
         document.getElementById("placeholder").src = "media/placeholder.jpg";
-        bobylan = false;
+        hamburger = false;
     }
 }
