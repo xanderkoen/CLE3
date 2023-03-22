@@ -1,0 +1,7 @@
+full {
+    min-width: max-content;
+    min-height: max-content;
+    flex: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
