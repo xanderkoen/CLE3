@@ -1,0 +1,10 @@
+
+package.json
+
+package-lock.json
+
+tailwind-config.js
+
+node_modules/.package-lock.json
+
+node_modules/
