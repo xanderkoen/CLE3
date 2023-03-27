@@ -123,7 +123,7 @@ function init() {
  * Generate the playing field dynamically with all the available images
  */
 function createFotoField() {
-    imageList = shuffleArray(imageList);
+    imageList = Foto(imageList);
 
     for (let i = 0; i < imageList.length; i++) {
         let card = document.createElement('div');
@@ -138,6 +138,6 @@ function createFotoField() {
     }
 }
 
-function shuffleArray(array) {
+function Foto(array) {
     return array;
 }
