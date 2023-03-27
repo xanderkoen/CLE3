@@ -1,0 +1,13 @@
+html {
+    flex: auto;
+    flex-direction: row;
+}
+
+body {
+    min-width: max-content;
+    min-height: max-content;
+    flex: auto!important;
+    flex-direction: row!important;
+    align-items: center!important;
+    justify-content: space-evenly!important;
+}
