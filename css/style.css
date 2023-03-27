@@ -59,3 +59,14 @@ button {
 .error {
     border-color: red;
 }
+
+#foto-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foto-card {
+    margin: 5px;
+}
