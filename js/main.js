@@ -133,7 +133,7 @@ function createFotoField() {
         let title = document.createElement('h2');
         card.appendChild(title);
         let image = document.createElement('img');
-        image.src = `img/${imageList[i]}.png`;
+        image.src = `../media/${imageList[i]}.png`;
         card.appendChild(image);
     }
 }
