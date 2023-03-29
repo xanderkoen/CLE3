@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
+    background-color: rgb(106, 172, 223);
     margin: 0;
     padding: 0;
 }
@@ -22,13 +23,13 @@ section {
     margin-top: 30px;
 }
 
-#todolist {
+#suggestionlist {
     background-color: white;
     padding: 20px;
     box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.5);
 }
 
-#todo-field {
+#suggestion-field {
     width: calc(98% - 120px);
 }
 
@@ -37,7 +38,7 @@ li {
     padding-inline-start: 1ch;
     font-family: 'Handlee', cursive;
     font-size: 1.4em;
-    margin: 4px 0px;
+    margin: 4px 35px;
     cursor: pointer;
 }
 
@@ -69,4 +70,5 @@ button {
 
 .foto-card {
     margin: 5px;
+    width: 200px;
 }
