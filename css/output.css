@@ -517,8 +517,24 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .bg-black {
@@ -529,6 +545,10 @@ video {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-xl {
