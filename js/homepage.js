@@ -13,12 +13,10 @@ function hamburgerchange() {
         tree = false;
         deur = false;
         document.getElementById("hamburger").src = "../media/HamburgerGif.gif";
-        setTimeout(() => { document.getElementById("hamburger").src = "./../media/hamburgeropen.png"; }, 350);
-        document.getElementById("hamburger").onclick = "linkburger()";
+        setTimeout(() => { document.getElementById("hamburger").src = "./../media/hamburgeropen.png"; }, 350)
 
     }else{
-        document.getElementById("hamburger").src = "./../media/hamburgerdicht.png";
-        hamburger = false;
+        window.location.href = "../html/beweging.html";
     }
 }
 
@@ -34,8 +32,7 @@ function deurchange() {
         document.getElementById("deur").src = "../media/DeurGif.gif";
         setTimeout(() => { document.getElementById("deur").src = "./../media/deuropen.png"; }, 900);
     }else{
-        document.getElementById("deur").src = "./../media/deurdicht.png";
-        deur = false;
+        window.location.href = "../html/reizen.html";
     }
 }
 
@@ -53,19 +50,6 @@ function treechange() {
         setTimeout(() => { document.getElementById("tree").src = "./../media/treeopen.png"; }, 500);
 
     }else{
-        document.getElementById("tree").src = "./../media/treedicht.png";
-        tree = false;
-    }
-
-    function linkburger() {
-        console.log("nig")
-    }
-
-    function linkdeur() {
-
-    }
-
-    function linktree() {
-
+        window.location.href = "../html/toegankelijkheid.html";
     }
 }
