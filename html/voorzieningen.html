@@ -10,25 +10,38 @@
     <title>Voorzieningen</title>
 </head>
 
-<div class="relative overflow-hidden bg-cover bg-no-repeat bg-center" style="
+<body>
+    <div class="pl-4 mb-2 sm:mb-0 flex flex-row
+    ">
+        <div class="h-20 w-20 self-center mr-2">
+            <img class="h-20 w-20 self-center" src="../media/Hamburger.gif" />
+        </div>
+        <div>
+            <a href="/home" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">eten op rolletjes</a><br>
+            <span class="text-xs text-grey-dark">eten op rolletjes</span>
+        </div>
+    </div>
+    <nav class="bg-pink-400 text-center grid grid-cols-4 border-solid border-sky-500">
+        <a href="beweging.html" class="border-t-2 border-r-2 p-5 border-indigo-500">Beweging</a>
+        <a href="reizen.html" class="border-t-2 border-r-2 p-5 border-indigo-500">Reizen</a>
+        <a href="toegankelijkheid.html" class="border-t-2 border-r-2 p-5 border-indigo-500">Toegankelijkheid</a>
+        <a href="voorzieningen.html" class="border-t-2 p-5 border-indigo-500">Voorzieningen</a>
+    </nav>
+    <div class="relative overflow-hidden bg-cover bg-no-repeat bg-center" style="
 background-image: url('../media/voorzieningbanner.png');
 height: 250px;
 ">
+    </div>
 
-</div>
-
-<body>
-
-    <p class="text-center">So I started to walk into the water...</p>
-
-    <section>
+    <section class="pt-10">
+        <p class="text-center">So I started to walk into the water...</p>
         <div id="foto-field"></div>
     </section>
     <section id="main">
         <div id="suggestionlist">
             <h1><i class="fas fa-clipboard-list"></i> suggestion List</h1>
             <form id="suggestion-form">
-                <input type="text" placeholder="todo item" name="suggestion" id="suggestion-field" />
+                <input type="text" placeholder="Schrijf suggestie" name="suggestion" id="suggestion-field" />
                 <input type="submit" value="Toevoegen" />
             </form>
             <ul id="list"></ul>
