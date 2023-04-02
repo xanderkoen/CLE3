@@ -68,9 +68,11 @@ function setrestaurant() {
     let website = document.getElementById("website");
     let link = document.getElementById("link");
     let map = document.getElementById("map");
+    let nop = document.getElementById("nop");
 }
 
 function zorba() {
+    removenop();
     console.log("zorba");
     resnaam.innerHTML = "Zorba de Griek";
     resadres.innerHTML = "Voorstraat 43, 3201 BA Spijkenisse";
@@ -100,6 +102,7 @@ function zorba() {
 }
 
 function havenhuys() {
+    removenop();
     console.log("haven");
     resnaam.innerHTML = "Havenhuys";
     resadres.innerHTML = "Havenplein 5, 3201 BK Spijkenisse";
@@ -128,6 +131,7 @@ function havenhuys() {
 }
 
 function heuvel() {
+    removenop();
     console.log("heuvel");
     resnaam.innerHTML = "Parkheuvel";
     resadres.innerHTML = "Heuvellaan 21, 3016 GL Rotterdam";
@@ -154,6 +158,7 @@ function heuvel() {
 }
 
 function fg() {
+    removenop();
     console.log("fg");
     resnaam.innerHTML = "FG Restaurant";
     resadres.innerHTML = "Katshoek 37, 3032 AE, Rotterdam";
@@ -181,6 +186,7 @@ function fg() {
 }
 
 function blink() {
+    removenop();
     console.log("blink");
     resnaam.innerHTML = "Bar Blink";
     resadres.innerHTML = "Wijnhaven 59, 3011 WJ Rotterdam";
@@ -208,6 +214,7 @@ function blink() {
 }
 
 function afrika() {
+    removenop();
     console.log("afrika");
     resnaam.innerHTML = "Viva Afrika";
     resadres.innerHTML = "Nieuwe Binnenweg 153-A/B, 3014 GK Rotterdam";
@@ -235,6 +242,7 @@ function afrika() {
 }
 
 function jack() {
+    removenop();
     console.log("jack");
     resnaam.innerHTML = "JACK";
     resadres.innerHTML = "Raampoortstraat 10, 3032 AH Rotterdam";
@@ -262,6 +270,7 @@ function jack() {
 }
 
 function ok() {
+    removenop();
     console.log("ok");
     resnaam.innerHTML = "Restaurant oKay";
     resadres.innerHTML = "Vijf Werelddelen 71, 3071 PS Rotterdam";
@@ -289,6 +298,7 @@ function ok() {
 }
 
 function china() {
+    removenop();
     console.log("china");
     resnaam.innerHTML = "Sense of China";
     resadres.innerHTML = "Middenbaan Noord 202, 3191 EL Hoogvliet Rotterdam";
@@ -316,6 +326,7 @@ function china() {
 }
 
 function helai() {
+    removenop();
     console.log("helai");
     resnaam.innerHTML = "Helai";
     resadres.innerHTML = "Piet Smitkade 160, 3077 MJ Rotterdam";
@@ -343,6 +354,7 @@ function helai() {
 }
 
 function afsana() {
+    removenop();
     console.log("afsana");
     resnaam.innerHTML = "Afsana Afghaans Restaurant";
     resadres.innerHTML = "Hillelaan 7, 3072 JA Rotterdam";
@@ -370,6 +382,7 @@ function afsana() {
 }
 
 function kostas() {
+    removenop();
     console.log("kostas");
     resnaam.innerHTML = "Kostas de griek";
     resadres.innerHTML = "Hesseplaats 51, 3069 EA Rotterdam";
@@ -393,5 +406,17 @@ function kostas() {
     website.classList.remove("invisible")
     link.href = "https://www.kostasdegriek.nl/"
     map.src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d852.609372583332!2d4.552101749088977!3d51.962671574279014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5cd110041c5cb%3A0xb0109b0a82d8f010!2sKostas%20de%20Griek!5e0!3m2!1snl!2snl!4v1680474488312!5m2!1snl!2snl";
+
+}
+
+function removenop() {
+    let hunny = false;
+
+    if (hunny === false){
+        nop.remove();
+        document.getElementById("showcase").classList.add("visibile");
+        document.getElementById("showcase").classList.remove("hidden");
+        hunny = true;
+    }
 
 }

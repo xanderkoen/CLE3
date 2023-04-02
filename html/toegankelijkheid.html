@@ -73,13 +73,13 @@
         <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="kostas()">Kostas de griek</button>
     </div>
 </div>
-<!--    <p class="text-4xl text-center" id="no-option">Druk op een Plaats en kies een Restaurant uit.</p>-->
+<p class="text-4xl text-center" id="nop">Druk op een Plaats en kies een Restaurant uit.</p>
 
-<div class="grid grid-cols-2 w-screen mb-4">
+<div class="grid grid-cols-2 w-fit mx-auto mb-4 hidden border border-2 mt-2" id="showcase">
     <div class="text-center h-fit my-auto px-4">
         <p class="text-2xl font-semibold" id="resnaam">Restaurant naam</p>
 
-        <p class="text-2xl text-normal mb-4" id="resadres">Adress</p>
+        <p class="text-2xl text-normal mb-4 border-b-2" id="resadres">Adress</p>
 
         <div class="grid grid-cols-4">
             <div class="text-right mr-2 font-medium">
@@ -102,7 +102,7 @@
                 <p id="zaterdag">08:00 / 17:00</p>
                 <p id="zondag">08:00 / 17:00</p>
             </div>
-            <div>
+            <div class="border-x-2 p-2">
                 <p class="font-medium">Toegankelijkheden</p>
                 <p class="text-green-500" id="toilet">Invalide toilet</p>
                 <p class="text-green-500" id="parkeerplaats">Invalide Parkeerplaats</p>
@@ -118,7 +118,7 @@
         </div>
 
     </div>
-    <div>
+    <div class="w-fit">
         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d978.0721290606965!2d4.3262561439209835!3d51.8502493275509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1szorba%20de%20griek!5e0!3m2!1snl!2snl!4v1680468419113!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
     </div>
 </div>
