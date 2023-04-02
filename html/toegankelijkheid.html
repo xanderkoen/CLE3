@@ -45,37 +45,82 @@
 <div class="w-screen bg-gray-200">
 <button class="w-screen text-center hover:bg-gray-400 text-6xl p-4" id="colspijk" onclick="spijkwap()">Spijkenisse</button>
     <div class="divide-x w-fit mx-auto hidden" id="spijkcontent">
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="spijksub1">Zorba De Griek</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="zorba()">Zorba De Griek</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="spijksub2">Het HavenHuys</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="havenhuys()">Het HavenHuys</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="spijksub3">ParkHeuvel</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="heuvel()">ParkHeuvel</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="spijksub4">FG Restaurant</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="fg()">FG Restaurant</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="spijksub5">Bar blink</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="blink()">Bar blink</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="spijksub6">Viva afrika</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2"onclick="afrika()" >Viva afrika</button>
     </div>
 
  <button class="w-screen text-center hover:bg-gray-400 text-6xl p-4" id="colrof" onclick="roffaswap()">Rotterdam</button>
     <div class="divide-x w-fit mx-auto hidden" id="roffacontent">
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="rofsub1">JACK</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="jack()">JACK</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="rofsub2">oKAY</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="ok()">oKay</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="rofsub3">Sense of china</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="china()">Sense of china</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="rofsub4">Helai</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="helai()">Helai</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="rofsub5">Afsana</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="afsana()">Afsana</button>
 
-        <button class="text-center hover:bg-gray-400 text-2xl p-2" id="rofsub6">Kostas de griek</button>
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="kostas()">Kostas de griek</button>
     </div>
 </div>
+<!--    <p class="text-4xl text-center" id="no-option">Druk op een Plaats en kies een Restaurant uit.</p>-->
 
-<div class="w-screen my-4">
-    <p class="text-4xl text-center" id="no-option">Druk op een Plaats en kies een Restaurant uit.</p>
+<div class="grid grid-cols-2 w-screen mb-4">
+    <div class="text-center h-fit my-auto px-4">
+        <p class="text-2xl font-semibold" id="resnaam">Restaurant naam</p>
+
+        <p class="text-2xl text-normal mb-4" id="resadres">Adress</p>
+
+        <div class="grid grid-cols-4">
+            <div class="text-right mr-2 font-medium">
+                <p>Openings</p>
+                <p>Maandag: </p>
+                <p>Dinsdag: </p>
+                <p>Woensdag: </p>
+                <p>Donderdag: </p>
+                <p>Vrijdag: </p>
+                <p>Zaterdag: </p>
+                <p>Zondag: </p>
+            </div>
+            <div class="text-left pr-6">
+                <p class="font-medium">tijden</p>
+                <p id="maandag">08:00 / 17:00</p>
+                <p id="dinsdag">08:00 / 17:00</p>
+                <p id="woensdag">08:00 / 17:00</p>
+                <p id="donderdag">08:00 / 17:00</p>
+                <p id="vrijdag">08:00 / 17:00</p>
+                <p id="zaterdag">08:00 / 17:00</p>
+                <p id="zondag">08:00 / 17:00</p>
+            </div>
+            <div>
+                <p class="font-medium">Toegankelijkheden</p>
+                <p class="text-green-500" id="toilet">Invalide toilet</p>
+                <p class="text-green-500" id="parkeerplaats">Invalide Parkeerplaats</p>
+                <p class="text-green-500" id="paden">Brede paden</p>
+                <p class="text-red-500" id="verhogingen">verhogingen</p>
+            </div>
+            <div>
+                <p class="font-medium">Telefoon nummer</p>
+                <p id="monster">08:00 / 17:00</p>
+                <br>
+                <a href="#" id="link" target="_blank" ><button class="bg-sky-400 p-2 rounded-lg" id="website">Bezoek de website</button></a>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d978.0721290606965!2d4.3262561439209835!3d51.8502493275509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1szorba%20de%20griek!5e0!3m2!1snl!2snl!4v1680468419113!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+    </div>
 </div>
 </body>
 </html>
