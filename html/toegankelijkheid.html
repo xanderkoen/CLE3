@@ -43,8 +43,8 @@
 </div>
 
 <div class="w-screen bg-gray-200">
-<button class="w-screen text-center hover:bg-gray-400 text-6xl p-4" id="colspijk" onclick="test()">Spijkenisse</button>
-    <div class="divide-x w-fit mx-auto">
+<button class="w-screen text-center hover:bg-gray-400 text-6xl p-4" id="colspijk" onclick="spijkwap()">Spijkenisse</button>
+    <div class="divide-x w-fit mx-auto hidden" id="spijkcontent">
         <button class="text-center hover:bg-gray-400 text-2xl p-2" id="spijksub1">Zorba De Griek</button>
 
         <button class="text-center hover:bg-gray-400 text-2xl p-2" id="spijksub2">Het HavenHuys</button>
@@ -58,8 +58,8 @@
         <button class="text-center hover:bg-gray-400 text-2xl p-2" id="spijksub6">Viva afrika</button>
     </div>
 
- <button class="w-screen text-center hover:bg-gray-400 text-6xl p-4" id="colrof" onclick="test()">Rotterdam</button>
-    <div class="divide-x w-fit mx-auto">
+ <button class="w-screen text-center hover:bg-gray-400 text-6xl p-4" id="colrof" onclick="roffaswap()">Rotterdam</button>
+    <div class="divide-x w-fit mx-auto hidden" id="roffacontent">
         <button class="text-center hover:bg-gray-400 text-2xl p-2" id="rofsub1">JACK</button>
 
         <button class="text-center hover:bg-gray-400 text-2xl p-2" id="rofsub2">oKAY</button>
@@ -72,6 +72,10 @@
 
         <button class="text-center hover:bg-gray-400 text-2xl p-2" id="rofsub6">Kostas de griek</button>
     </div>
+</div>
+
+<div class="w-screen my-4">
+    <p class="text-4xl text-center" id="no-option">Druk op een Plaats en kies een Restaurant uit.</p>
 </div>
 </body>
 </html>
