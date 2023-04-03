@@ -23,11 +23,11 @@
             <p class="pt-6 text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">eten op rolletjes</p>
         </div>
     </div>
-    <nav class="bg-pink-400 text-center grid grid-cols-4 border-solid border-sky-500">
-        <a href="beweging.html" class="border-t-2 border-r-2 p-5 border-indigo-500">Beweging</a>
-        <a href="reizen.html" class="border-t-2 border-r-2 p-5 border-indigo-500">Reizen</a>
-        <a href="toegankelijkheid.html" class="border-t-2 border-r-2 p-5 border-indigo-500">Toegankelijkheid</a>
-        <a href="voorzieningen.html" class="border-t-2 p-5 border-indigo-500">Voorzieningen</a>
+    <nav class="z-10 sticky top-0 bg-gray-200 text-center grid grid-cols-4 border-solid border-gray-500">
+        <a href="beweging.html" class="border-2 p-5 border-gray-500 font-medium">Beweging</a>
+        <a href="reizen.html" class="border-y-2 border-r-2 p-5 border-gray-500 font-medium">Reizen</a>
+        <a href="toegankelijkheid.html" class="border-y-2  p-5 border-gray-500 font-medium">Toegankelijkheid</a>
+        <a href="voorzieningen.html" class="border-2 p-5 border-gray-500 font-medium">Voorzieningen</a>
     </nav>
     <div class="relative overflow-hidden bg-cover bg-no-repeat bg-center" style="
 background-image: url('../media/voorzieningbanner.png');
@@ -35,13 +35,14 @@ height: 250px;
 ">
     </div>
 
+
     <section class="pt-10">
-        <p class="text-center">So I started to walk into the water...</p>
+        <p class="text-center pb-4">Voorzieningen</p>
         <div id="foto-field"></div>
     </section>
     <section id="main">
         <div id="suggestionlist">
-            <h1><i class="fas fa-clipboard-list"></i> suggestion List</h1>
+            <h1><i class="fas fa-clipboard-list"></i>Voorzieningen voorstellen</h1>
             <form id="suggestion-form">
                 <input type="text" placeholder="Schrijf suggestie" name="suggestion" id="suggestion-field" />
                 <input type="submit" value="Toevoegen" />
