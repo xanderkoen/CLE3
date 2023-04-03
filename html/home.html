@@ -7,22 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../js/homepage.js"></script>
     <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/background.css">
     <title>Eten op rolletjes - Home</title>
 </head>
 
-<body>
-<div class=" flex flex-row bg-blue-500 flex flex-row ">
-    <div>
-    <p class="text-xl">sex</p>
+<body class="overflow-hidden">
+<div class="min-h-screen grid grid-cols-3">
+    <div class="my-auto relative">
+        <img src="../media/deurdicht.png" class="static" id="deur" onclick="deurchange()" height="2550" width="3300">
+        <div class="absolute">
+            <img src="../media/geluidUit.png" class="static max-h-40 max-w-40" id="muziek" onclick="audioswitch()">
+        </div>
     </div>
-    <div>
-    <p>sex</p>
+
+    <div class="my-auto">
+        <img src="../media/hamburgerdicht.png" class="visible" id="hamburger" onclick="hamburgerchange()" height="2550" width="3300">
+        <div id="split" class=" ml-12 flex flex-row my-auto hidden">
+            <img src="../media/hamburgerl.png" id="hamburgerl" class="max-h-80" onclick="hamburgerL()">
+            <img src="../media/hamburgerr.png" id="hamburgerr" class="max-h-80" onclick="hamburgerR()">
+        </div>
     </div>
-    <div>
-    <p>sex</p>
+    <div class="my-auto">
+        <img class="my-auto" src="../media/treedicht.png" id="tree" onclick="treechange()" height="2550" width="3300">
     </div>
 </div>
-
 </body>
-
 </html>

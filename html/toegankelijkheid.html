@@ -6,8 +6,121 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eten op rolletjes - Toegankelijkheid</title>
+    <script src="../js/toegankelijkheid.js"></script>
+    <link rel="stylesheet" href="../css/output.css">
 </head>
-<body>
+<body class="overflow-x-hidden">
+<div class="pl-4 mb-2 sm:mb-0 flex flex-row">
+    <div class="h-20 w-20 self-center mr-2">
+        <a href="home.html"><img class="h-20 w-20 self-center" src="../media/Hamburger.gif"/>
+        </a>
+    </div>
+    <div>
+        <p class="pt-6 text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">eten op
+            rolletjes</p>
+    </div>
+</div>
+<nav class="z-10 sticky top-0 bg-gray-200 text-center grid grid-cols-4 border-solid border-gray-500">
+    <a href="beweging.html" class="border-2 p-5 border-gray-500 font-medium">Beweging</a>
+    <a href="reizen.html" class="border-y-2 border-r-2 p-5 border-gray-500 font-medium">Reizen</a>
+    <a href="toegankelijkheid.html" class="border-y-2  p-5 border-gray-500 font-medium">Toegankelijkheid</a>
+    <a href="voorzieningen.html" class="border-2 p-5 border-gray-500 font-medium">Voorzieningen</a>
+</nav>
+<img src="../media/toegankbanner.png" alt="banner" class="w-screen">
 
+<p class="text-3xl text-center font-semibold mb-4">Toegankelijke Restaurants</p>
+
+<div class="grid grid-cols-2 w-screen mb-4">
+    <div class="text-left h-fit my-auto px-4">
+        <p class="text-2xl">Hieronder volgt een lijst met leuke toegankelijke restaurants als aanradertjes.
+            De Restaurants zijn niet ge-orderd.</p>
+
+        <p class="text-2xl">De restaurants zijn gesorteerd onder de plaatsnamen.</p>
+    </div>
+    <div class="w-fit">
+        <img src="../media/image%2012.png" class="rounded-lg shadow">
+    </div>
+</div>
+
+<div class="w-screen bg-gray-200">
+<button class="w-screen text-center hover:bg-gray-400 text-6xl p-4" id="colspijk" onclick="spijkwap()">Spijkenisse</button>
+    <div class="divide-x w-fit mx-auto hidden" id="spijkcontent">
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="zorba()">Zorba De Griek</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="havenhuys()">Het HavenHuys</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="heuvel()">ParkHeuvel</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="fg()">FG Restaurant</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="blink()">Bar blink</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2"onclick="afrika()" >Viva afrika</button>
+    </div>
+
+ <button class="w-screen text-center hover:bg-gray-400 text-6xl p-4" id="colrof" onclick="roffaswap()">Rotterdam</button>
+    <div class="divide-x w-fit mx-auto hidden" id="roffacontent">
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="jack()">JACK</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="ok()">oKay</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="china()">Sense of china</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="helai()">Helai</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="afsana()">Afsana</button>
+
+        <button class="text-center hover:bg-gray-400 text-2xl p-2" onclick="kostas()">Kostas de griek</button>
+    </div>
+</div>
+<p class="text-4xl text-center" id="nop">Druk op een Plaats en kies een Restaurant uit.</p>
+
+<div class="grid grid-cols-2 w-fit mx-auto mb-4 hidden border border-2 mt-2" id="showcase">
+    <div class="text-center h-fit my-auto px-4">
+        <p class="text-2xl font-semibold" id="resnaam">Restaurant naam</p>
+
+        <p class="text-2xl text-normal mb-4 border-b-2" id="resadres">Adress</p>
+
+        <div class="grid grid-cols-4">
+            <div class="text-right mr-2 font-medium">
+                <p>Openings</p>
+                <p>Maandag: </p>
+                <p>Dinsdag: </p>
+                <p>Woensdag: </p>
+                <p>Donderdag: </p>
+                <p>Vrijdag: </p>
+                <p>Zaterdag: </p>
+                <p>Zondag: </p>
+            </div>
+            <div class="text-left pr-6">
+                <p class="font-medium">tijden</p>
+                <p id="maandag">08:00 / 17:00</p>
+                <p id="dinsdag">08:00 / 17:00</p>
+                <p id="woensdag">08:00 / 17:00</p>
+                <p id="donderdag">08:00 / 17:00</p>
+                <p id="vrijdag">08:00 / 17:00</p>
+                <p id="zaterdag">08:00 / 17:00</p>
+                <p id="zondag">08:00 / 17:00</p>
+            </div>
+            <div class="border-x-2 p-2">
+                <p class="font-medium">Toegankelijkheden</p>
+                <p class="text-green-500" id="toilet">Invalide toilet</p>
+                <p class="text-green-500" id="parkeerplaats">Invalide Parkeerplaats</p>
+                <p class="text-green-500" id="paden">Brede paden</p>
+                <p class="text-red-500" id="verhogingen">verhogingen</p>
+            </div>
+            <div>
+                <p class="font-medium">Telefoon nummer</p>
+                <p id="monster">08:00 / 17:00</p>
+                <br>
+                <a href="#" id="link" target="_blank" ><button class="bg-sky-400 p-2 rounded-lg" id="website">Bezoek de website</button></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="w-fit">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d978.0721290606965!2d4.3262561439209835!3d51.8502493275509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1szorba%20de%20griek!5e0!3m2!1snl!2snl!4v1680468419113!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+    </div>
+</div>
 </body>
 </html>
