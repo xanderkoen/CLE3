@@ -109,7 +109,6 @@ function removeItemFromLocalStorage(value) {
     suggestionItems.splice(itemIndex, 1);
     localStorage.setItem('suggestion', JSON.stringify(suggestionItems));
 }
-
 /**
  * This function registers a service worker. A service worker is needed to support offline usage for
  * Progressive Web Apps (PWA). It's also needed to support the "add to homescreen" feature.
