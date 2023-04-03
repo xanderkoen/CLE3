@@ -24,12 +24,13 @@ body{
  }
 
 i{
-    position: fixed;
+    position: relative;
     width: 120px;
     height: 120px;
     border-radius: 50%;
     -webkit-animation: 'screen'  infinite;
     animation: 'screen'  infinite;
+    z-index: 0;
 }
 
 
@@ -398,6 +399,18 @@ i:nth-child(40){
     text-transform: uppercase;
     font-weight: 900;
 }
+.text-container p{
+    margin: 0;
+    font-size: medium;
+    color: rgba(225,225,225, .01);
+    background-image: url("../media/beweging/1024px-Fractal_Xaos_psychedelic.png");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s alternate infinite;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: 20px;
+}
 
 @keyframes animate {
     0%, 100% {
@@ -412,4 +425,10 @@ i:nth-child(40){
     75% {
         background-position: right top;
     }
+}
+.z-10 {
+    z-index: 10;
+}
+.button-green{
+    background-color: #4DFE15;
 }
